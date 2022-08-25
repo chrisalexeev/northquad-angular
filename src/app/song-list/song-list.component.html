@@ -1,0 +1,22 @@
+<div class="container">
+  <mat-list>
+    <ng-container  *ngFor="let song of songs; last as last">
+
+      <mat-list-item>
+        <h3 matLine>{{ song.title }}</h3>
+        <p matLine>
+          <span> {{song.artist}} </span>
+          <span *ngIf="song.album"> -- {{song.album}} </span>
+        </p>
+        <button mat-icon-button (click)="openSongDetails(song)">
+          <mat-icon>edit</mat-icon>
+        </button>
+       <button mat-icon-button (click)="deleteSongById(song.id)">
+         <mat-icon>delete</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-divider *ngIf="!last"></mat-divider>
+    </ng-container>
+  </mat-list>
+  <button mat-flat-button color="primary" (click)="openDialog()">Add Song</button>
+</div>

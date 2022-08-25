@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mat-list {
+    width: 95vw;
+}
+
+@media screen and (width > calc(400px * 0.95)) {
+    .mat-list {
+        width: calc(400px * 0.95);
+    }
+}
+
+.mat-list-item {
+    color: unset;
+}
+
+.mat-divider {
+    background-color: grey;
+}

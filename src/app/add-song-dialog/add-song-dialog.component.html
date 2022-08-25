@@ -1,0 +1,26 @@
+<h1 mat-dialog-title>Add Song</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Song Title</mat-label>
+    <input matInput [(ngModel)]="song.title" name="title" required />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Artist</mat-label>
+    <input
+      matInput
+      [(ngModel)]="song.artist"
+      placeholder="Artist"
+      name="artist"
+    />
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Album</mat-label>
+    <input matInput [(ngModel)]="song.album" placeholder="Album" name="album" />
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button (click)="addSong()" cdkFocusInitial>Ok</button>
+</div>
