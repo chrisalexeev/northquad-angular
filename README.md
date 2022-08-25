@@ -1,4 +1,11 @@
-# PracticeProject
+# Traxx for NorthQuad - React
+
+## Get up and running locally
+
+Download the repo, go to the root directory, and run `npm i`.
+To start the frontend server, run the command `npm start`.
+
+---
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.3.
 
